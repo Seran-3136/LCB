@@ -1,0 +1,124 @@
+/* Map.css */
+.add-farmer-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .add-farmer-container h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .farmer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .farmer-input {
+    padding: 12px 15px;
+    font-size: 16px;
+    width:550px;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    color: #2d3436;
+  }
+  
+  .farmer-input:focus {
+    border-color: #0984e3;
+    box-shadow: 0 0 8px rgba(9, 132, 227, 0.3);
+    transform: scale(1.02);
+  }
+  
+  .farmer-input::placeholder {
+    color: #b2bec3;
+    font-style: italic;
+  }
+  
+  .save-button,
+  .cancel-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .save-button {
+    background-color: #00b894;
+    color: white;
+  }
+  
+  .save-button:hover {
+    background-color: #009e7f;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 184, 148, 0.4);
+  }
+  
+  .cancel-button {
+    background-color: #d63031;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .cancel-button:hover {
+    background-color: #b52627;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(214, 48, 49, 0.4);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .add-farmer-container {
+      margin: 20px;
+      padding: 20px;
+    }
+  
+    .add-farmer-container h2 {
+      font-size: 24px;
+    }
+  
+    .farmer-input {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .save-button,
+    .cancel-button {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }
+  
+  /* Animation for form entrance */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .add-farmer-container {
+    animation: fadeIn 0.5s ease-out;
+  }
